@@ -20,7 +20,7 @@ let registerUser = async function(req, res){
   }
 
   // convert password to its hash
-  let hashl
+  let hash
   try{
     hash = await argon.hash(password);
   }catch(err){
